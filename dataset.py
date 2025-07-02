@@ -8,11 +8,11 @@ class ChestXrayDataset(Dataset):
         self.transform = transform    
 
     def __len__(self):
-        return len(self.image_paths)
+        return len(self.df)
 
     def __getitem__(self, idx):
         img_path = self.df.iloc[idx]['image_path']
-        label = self.df[idx,'View_Position']
+        label = self.df.iloc[idx]['View_Position']
 
         image = Image.open(img_path).convert("RGB")
 
