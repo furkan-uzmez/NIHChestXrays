@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import torch
+from tqdm import tqdm  
 from sklearn.metrics import (
     precision_score, recall_score, f1_score,
     roc_curve, auc
 )
+import torch.nn.functional as F
+
 
 def plot_results(num_epochs,epoch_losses,epoch_accuracies):
     # 4. Plot the results
@@ -31,21 +34,26 @@ def plot_results(num_epochs,epoch_losses,epoch_accuracies):
     plt.show()
 
 
-def eval_on_metrics(model,test_loader):
-    # 4. Evaluation
+def eval_on_metrics(model, test_loader):
     model.eval()
+    device = next(model.parameters()).device
+
     y_true = []
     y_pred = []
     y_scores = []
 
     with torch.no_grad():
-        for images, labels in test_loader:
-            outputs = model(images).squeeze()
-            preds = (outputs > 0.5).int()
+        for images, labels in tqdm(test_loader, desc="Evaluating"):
+            images = images.to(device)
+            labels = labels.to(device)
 
-            y_true.extend(labels.numpy())
-            y_pred.extend(preds.numpy())
-            y_scores.extend(outputs.numpy())
+            outputs = model(images)  # shape: [batch_size, num_classes]
+            probs = F.softmax(outputs, dim=1)  # olasılıkları al
+            preds = torch.argmax(probs, dim=1)  # en yüksek olasılık sınıfı
+
+            y_true.extend(labels.cpu().numpy())
+            y_pred.extend(preds.cpu().numpy())
+            y_scores.extend(probs[:, 1].cpu().numpy())  # Pozitif sınıfın olasılık skoru (1.sınıf)
 
     # 5. Compute metrics
     precision = precision_score(y_true, y_pred)
