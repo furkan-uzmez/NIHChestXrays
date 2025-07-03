@@ -1,7 +1,7 @@
 import torch
 from tqdm import tqdm
 
-def train(model, train_loader, val_loader, criterion, optimizer, device, num_epochs=5, save_path='models/best_model.pth'):
+def train(model, train_loader, val_loader, criterion, optimizer, device, num_epochs=5, save_path='models/best_model.pth',log_path='training.log'):
     with open(log_path, 'w') as f:
         f.write("Training log\n")
 
