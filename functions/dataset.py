@@ -26,3 +26,6 @@ class ChestXrayDataset(Dataset):
             image = self.transform(image)
 
         return image, label
+    
+    def get_path(self,idx):
+        return self.df.loc[idx]['image_path']
