@@ -1,0 +1,110 @@
+Training log
+Epoch [1/30]
+  Train Loss: 0.0917, Train Acc: 0.9711
+  Val   Loss: 0.0518, Val   Acc: 0.9853
+  Best model saved with val_loss: 0.0518
+Epoch [2/30]
+  Train Loss: 0.0548, Train Acc: 0.9841
+  Val   Loss: 0.0443, Val   Acc: 0.9881
+  Best model saved with val_loss: 0.0443
+Epoch [3/30]
+  Train Loss: 0.0503, Train Acc: 0.9859
+  Val   Loss: 0.0407, Val   Acc: 0.9893
+  Best model saved with val_loss: 0.0407
+Epoch [4/30]
+  Train Loss: 0.0467, Train Acc: 0.9867
+  Val   Loss: 0.0395, Val   Acc: 0.9898
+  Best model saved with val_loss: 0.0395
+Epoch [5/30]
+  Train Loss: 0.0439, Train Acc: 0.9878
+  Val   Loss: 0.0431, Val   Acc: 0.9882
+  No improvement. Early stopping counter: 1/5
+Epoch [6/30]
+  Train Loss: 0.0425, Train Acc: 0.9886
+  Val   Loss: 0.0361, Val   Acc: 0.9904
+  Best model saved with val_loss: 0.0361
+Epoch [7/30]
+  Train Loss: 0.0418, Train Acc: 0.9889
+  Val   Loss: 0.0371, Val   Acc: 0.9904
+  No improvement. Early stopping counter: 1/5
+Epoch [8/30]
+  Train Loss: 0.0407, Train Acc: 0.9891
+  Val   Loss: 0.0356, Val   Acc: 0.9908
+  Best model saved with val_loss: 0.0356
+Epoch [9/30]
+  Train Loss: 0.0382, Train Acc: 0.9899
+  Val   Loss: 0.0444, Val   Acc: 0.9881
+  No improvement. Early stopping counter: 1/5
+Epoch [10/30]
+  Train Loss: 0.0384, Train Acc: 0.9900
+  Val   Loss: 0.0350, Val   Acc: 0.9906
+  Best model saved with val_loss: 0.0350
+Epoch [11/30]
+  Train Loss: 0.0374, Train Acc: 0.9908
+  Val   Loss: 0.0360, Val   Acc: 0.9900
+  No improvement. Early stopping counter: 1/5
+Epoch [12/30]
+  Train Loss: 0.0358, Train Acc: 0.9903
+  Val   Loss: 0.0348, Val   Acc: 0.9908
+  Best model saved with val_loss: 0.0348
+Epoch [13/30]
+  Train Loss: 0.0360, Train Acc: 0.9906
+  Val   Loss: 0.0359, Val   Acc: 0.9905
+  No improvement. Early stopping counter: 1/5
+Epoch [14/30]
+  Train Loss: 0.0364, Train Acc: 0.9904
+  Val   Loss: 0.0339, Val   Acc: 0.9911
+  Best model saved with val_loss: 0.0339
+Epoch [15/30]
+  Train Loss: 0.0372, Train Acc: 0.9899
+  Val   Loss: 0.0325, Val   Acc: 0.9920
+  Best model saved with val_loss: 0.0325
+Epoch [16/30]
+  Train Loss: 0.0342, Train Acc: 0.9910
+  Val   Loss: 0.0334, Val   Acc: 0.9913
+  No improvement. Early stopping counter: 1/5
+Epoch [17/30]
+  Train Loss: 0.0345, Train Acc: 0.9907
+  Val   Loss: 0.0423, Val   Acc: 0.9891
+  No improvement. Early stopping counter: 2/5
+Epoch [18/30]
+  Train Loss: 0.0337, Train Acc: 0.9912
+  Val   Loss: 0.0375, Val   Acc: 0.9902
+  No improvement. Early stopping counter: 3/5
+Epoch [19/30]
+  Train Loss: 0.0350, Train Acc: 0.9908
+  Val   Loss: 0.0330, Val   Acc: 0.9909
+  No improvement. Early stopping counter: 4/5
+Epoch [20/30]
+  Train Loss: 0.0341, Train Acc: 0.9912
+  Val   Loss: 0.0322, Val   Acc: 0.9924
+  Best model saved with val_loss: 0.0322
+Epoch [21/30]
+  Train Loss: 0.0334, Train Acc: 0.9915
+  Val   Loss: 0.0335, Val   Acc: 0.9913
+  No improvement. Early stopping counter: 1/5
+Epoch [22/30]
+  Train Loss: 0.0343, Train Acc: 0.9913
+  Val   Loss: 0.0304, Val   Acc: 0.9922
+  Best model saved with val_loss: 0.0304
+Epoch [23/30]
+  Train Loss: 0.0341, Train Acc: 0.9911
+  Val   Loss: 0.0394, Val   Acc: 0.9899
+  No improvement. Early stopping counter: 1/5
+Epoch [24/30]
+  Train Loss: 0.0320, Train Acc: 0.9920
+  Val   Loss: 0.0388, Val   Acc: 0.9901
+  No improvement. Early stopping counter: 2/5
+Epoch [25/30]
+  Train Loss: 0.0319, Train Acc: 0.9918
+  Val   Loss: 0.0353, Val   Acc: 0.9916
+  No improvement. Early stopping counter: 3/5
+Epoch [26/30]
+  Train Loss: 0.0316, Train Acc: 0.9919
+  Val   Loss: 0.0311, Val   Acc: 0.9923
+  No improvement. Early stopping counter: 4/5
+Epoch [27/30]
+  Train Loss: 0.0321, Train Acc: 0.9915
+  Val   Loss: 0.0370, Val   Acc: 0.9904
+  No improvement. Early stopping counter: 5/5
+  Early stopping triggered. Training stopped.
