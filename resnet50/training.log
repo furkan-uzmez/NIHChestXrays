@@ -1,1 +1,58 @@
 Training log
+Epoch [1/30]
+  Train Loss: 0.0428, Train Acc: 0.9891
+  Val   Loss: 0.0310, Val   Acc: 0.9931
+  Best model saved with val_loss: 0.0310
+Epoch [2/30]
+  Train Loss: 0.0303, Train Acc: 0.9930
+  Val   Loss: 0.0322, Val   Acc: 0.9914
+  No improvement. Early stopping counter: 1/5
+Epoch [3/30]
+  Train Loss: 0.0268, Train Acc: 0.9940
+  Val   Loss: 0.0259, Val   Acc: 0.9933
+  Best model saved with val_loss: 0.0259
+Epoch [4/30]
+  Train Loss: 0.0245, Train Acc: 0.9944
+  Val   Loss: 0.0269, Val   Acc: 0.9947
+  No improvement. Early stopping counter: 1/5
+Epoch [5/30]
+  Train Loss: 0.0224, Train Acc: 0.9949
+  Val   Loss: 0.0253, Val   Acc: 0.9940
+  Best model saved with val_loss: 0.0253
+Epoch [6/30]
+  Train Loss: 0.0208, Train Acc: 0.9952
+  Val   Loss: 0.0311, Val   Acc: 0.9921
+  No improvement. Early stopping counter: 1/5
+Epoch [7/30]
+  Train Loss: 0.0197, Train Acc: 0.9955
+  Val   Loss: 0.0227, Val   Acc: 0.9950
+  Best model saved with val_loss: 0.0227
+Epoch [8/30]
+  Train Loss: 0.0174, Train Acc: 0.9958
+  Val   Loss: 0.0238, Val   Acc: 0.9956
+  No improvement. Early stopping counter: 1/5
+Epoch [9/30]
+  Train Loss: 0.0166, Train Acc: 0.9960
+  Val   Loss: 0.0221, Val   Acc: 0.9953
+  Best model saved with val_loss: 0.0221
+Epoch [10/30]
+  Train Loss: 0.0150, Train Acc: 0.9960
+  Val   Loss: 0.0231, Val   Acc: 0.9952
+  No improvement. Early stopping counter: 1/5
+Epoch [11/30]
+  Train Loss: 0.0140, Train Acc: 0.9964
+  Val   Loss: 0.0255, Val   Acc: 0.9945
+  No improvement. Early stopping counter: 2/5
+Epoch [12/30]
+  Train Loss: 0.0130, Train Acc: 0.9968
+  Val   Loss: 0.0261, Val   Acc: 0.9946
+  No improvement. Early stopping counter: 3/5
+Epoch [13/30]
+  Train Loss: 0.0114, Train Acc: 0.9967
+  Val   Loss: 0.0242, Val   Acc: 0.9948
+  No improvement. Early stopping counter: 4/5
+Epoch [14/30]
+  Train Loss: 0.0092, Train Acc: 0.9975
+  Val   Loss: 0.0269, Val   Acc: 0.9959
+  No improvement. Early stopping counter: 5/5
+  Early stopping triggered. Training stopped.
