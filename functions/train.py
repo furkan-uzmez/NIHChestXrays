@@ -16,7 +16,7 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
     train_accuracies = []
     val_losses = []
     val_accuracies = []
-
+    best_epoch = 0
     best_val_loss = float('inf')  
     epochs_without_improvement = 0 
     
@@ -77,6 +77,7 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
         
         # --- EARLY STOPPING KONTROLÜ ---
         if avg_val_loss < best_val_loss:
+            best_epoch = epoch
             best_val_loss = avg_val_loss
             torch.save(model.state_dict(), save_path)
             log_print(f"  Best model saved with val_loss: {best_val_loss:.4f}")
@@ -91,10 +92,7 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
     # --- EN İYİ MODEL SONUÇLARI LOGA EKLENİR ---
     log_print("\n========== BEST MODEL SUMMARY ==========")
     log_print(f"Best Epoch      : {best_epoch}")
-    log_print(f"Train Loss      : {best_train_loss:.4f}")
-    log_print(f"Train Accuracy  : {best_train_acc:.4f}")
     log_print(f"Val Loss        : {best_val_loss:.4f}")
-    log_print(f"Val Accuracy    : {best_val_acc:.4f}")
     log_print("========================================")
 
     return train_losses, train_accuracies, val_losses, val_accuracies
