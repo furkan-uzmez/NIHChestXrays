@@ -77,7 +77,7 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
         
         # --- EARLY STOPPING KONTROLÜ ---
         if avg_val_loss < best_val_loss:
-            best_epoch = epoch
+            best_epoch = epoch + 1
             best_val_loss = avg_val_loss
             torch.save(model.state_dict(), save_path)
             log_print(f"  Best model saved with val_loss: {best_val_loss:.4f}")
