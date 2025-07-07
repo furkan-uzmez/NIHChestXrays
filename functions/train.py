@@ -6,10 +6,11 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
         f.write("Training log\n")
 
     def log_print(message):
-        print(message)
+        timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
+        print(f"{timestamp} {message}")
         with open(log_path, 'a') as f:
-            f.write(message + '\n')
-
+            f.write(f"{timestamp} {message}\n")
+            
     model.to(device)
 
     train_losses = []
@@ -88,6 +89,13 @@ def train(model, train_loader, val_loader, criterion, optimizer, device,save_pat
             if epochs_without_improvement >= patience:
                 log_print(f"  Early stopping triggered. Training stopped.")
                 break
-
+    # --- EN İYİ MODEL SONUÇLARI LOGA EKLENİR ---
+    log_print("\n========== BEST MODEL SUMMARY ==========")
+    log_print(f"Best Epoch      : {best_epoch}")
+    log_print(f"Train Loss      : {best_train_loss:.4f}")
+    log_print(f"Train Accuracy  : {best_train_acc:.4f}")
+    log_print(f"Val Loss        : {best_val_loss:.4f}")
+    log_print(f"Val Accuracy    : {best_val_acc:.4f}")
+    log_print("========================================")
 
     return train_losses, train_accuracies, val_losses, val_accuracies
