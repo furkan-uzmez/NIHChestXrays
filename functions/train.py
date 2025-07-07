@@ -1,15 +1,14 @@
 import torch
 from tqdm import tqdm
+from logger import get_logger
 
 def train(model, train_loader, val_loader, criterion, optimizer, device,save_path, num_epochs=5, patience=3,log_path='training.log'):
-    with open(log_path, 'w') as f:
-        f.write("Training log\n")
+    logger = get_logger(log_path)
+    logger.info("Training started.")
 
     def log_print(message):
-        timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
-        print(f"{timestamp} {message}")
-        with open(log_path, 'a') as f:
-            f.write(f"{timestamp} {message}\n")
+        print(message)
+        logger.info(message)
             
     model.to(device)
 
