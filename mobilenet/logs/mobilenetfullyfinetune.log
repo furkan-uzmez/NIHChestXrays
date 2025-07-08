@@ -1,0 +1,43 @@
+[2025-07-08 02:26:16] Training started.
+[2025-07-08 02:32:17] Epoch [1/30]
+[2025-07-08 02:32:17]   Train Loss: 0.0340, Train Acc: 0.9925
+[2025-07-08 02:32:17]   Val   Loss: 0.0211, Val   Acc: 0.9951
+[2025-07-08 02:32:17]   Best model saved with val_loss: 0.0211
+[2025-07-08 02:39:06] Epoch [2/30]
+[2025-07-08 02:39:06]   Train Loss: 0.0260, Train Acc: 0.9942
+[2025-07-08 02:39:06]   Val   Loss: 0.0305, Val   Acc: 0.9939
+[2025-07-08 02:39:06]   No improvement. Early stopping counter: 1/5
+[2025-07-08 02:45:58] Epoch [3/30]
+[2025-07-08 02:45:58]   Train Loss: 0.0241, Train Acc: 0.9945
+[2025-07-08 02:45:58]   Val   Loss: 0.0218, Val   Acc: 0.9953
+[2025-07-08 02:45:58]   No improvement. Early stopping counter: 2/5
+[2025-07-08 02:52:09] Epoch [4/30]
+[2025-07-08 02:52:09]   Train Loss: 0.0222, Train Acc: 0.9955
+[2025-07-08 02:52:09]   Val   Loss: 0.0200, Val   Acc: 0.9960
+[2025-07-08 02:52:09]   Best model saved with val_loss: 0.0200
+[2025-07-08 02:58:20] Epoch [5/30]
+[2025-07-08 02:58:20]   Train Loss: 0.0195, Train Acc: 0.9958
+[2025-07-08 02:58:20]   Val   Loss: 0.0295, Val   Acc: 0.9922
+[2025-07-08 02:58:20]   No improvement. Early stopping counter: 1/5
+[2025-07-08 03:04:31] Epoch [6/30]
+[2025-07-08 03:04:31]   Train Loss: 0.0187, Train Acc: 0.9958
+[2025-07-08 03:04:31]   Val   Loss: 0.0239, Val   Acc: 0.9955
+[2025-07-08 03:04:31]   No improvement. Early stopping counter: 2/5
+[2025-07-08 03:11:14] Epoch [7/30]
+[2025-07-08 03:11:14]   Train Loss: 0.0174, Train Acc: 0.9962
+[2025-07-08 03:11:14]   Val   Loss: 0.0314, Val   Acc: 0.9934
+[2025-07-08 03:11:14]   No improvement. Early stopping counter: 3/5
+[2025-07-08 03:17:23] Epoch [8/30]
+[2025-07-08 03:17:23]   Train Loss: 0.0159, Train Acc: 0.9964
+[2025-07-08 03:17:23]   Val   Loss: 0.0231, Val   Acc: 0.9961
+[2025-07-08 03:17:23]   No improvement. Early stopping counter: 4/5
+[2025-07-08 03:24:29] Epoch [9/30]
+[2025-07-08 03:24:29]   Train Loss: 0.0143, Train Acc: 0.9967
+[2025-07-08 03:24:29]   Val   Loss: 0.0271, Val   Acc: 0.9941
+[2025-07-08 03:24:29]   No improvement. Early stopping counter: 5/5
+[2025-07-08 03:24:29]   Early stopping triggered. Training stopped.
+[2025-07-08 03:24:29] 
+========== BEST MODEL SUMMARY ==========
+[2025-07-08 03:24:29] Best Epoch      : 4
+[2025-07-08 03:24:29] Val Loss        : 0.0200
+[2025-07-08 03:24:29] ========================================
