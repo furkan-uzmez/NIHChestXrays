@@ -1,0 +1,48 @@
+[2026-01-18 01:13:41] Training started.
+[2026-01-18 01:20:55] Training started.
+[2026-01-18 01:27:31] Epoch [1/30]
+[2026-01-18 01:27:31]   Train Loss: 0.8586, Train Acc: 0.9895
+[2026-01-18 01:27:31]   Val   Loss: 0.0399, Val   Acc: 0.9952
+[2026-01-18 01:27:31]   Best model saved with val_loss: 0.0399
+[2026-01-18 01:33:45] Epoch [2/30]
+[2026-01-18 01:33:45]   Train Loss: 0.0318, Train Acc: 0.9948
+[2026-01-18 01:33:45]   Val   Loss: 0.0266, Val   Acc: 0.9955
+[2026-01-18 01:33:45]   Best model saved with val_loss: 0.0266
+[2026-01-18 01:40:24] Epoch [3/30]
+[2026-01-18 01:40:24]   Train Loss: 0.0244, Train Acc: 0.9951
+[2026-01-18 01:40:24]   Val   Loss: 0.0230, Val   Acc: 0.9954
+[2026-01-18 01:40:24]   Best model saved with val_loss: 0.0230
+[2026-01-18 01:46:54] Epoch [4/30]
+[2026-01-18 01:46:54]   Train Loss: 0.0188, Train Acc: 0.9961
+[2026-01-18 01:46:54]   Val   Loss: 0.0211, Val   Acc: 0.9958
+[2026-01-18 01:46:54]   Best model saved with val_loss: 0.0211
+[2026-01-18 01:53:30] Epoch [5/30]
+[2026-01-18 01:53:30]   Train Loss: 0.0165, Train Acc: 0.9962
+[2026-01-18 01:53:30]   Val   Loss: 0.0205, Val   Acc: 0.9950
+[2026-01-18 01:53:30]   Best model saved with val_loss: 0.0205
+[2026-01-18 02:00:01] Epoch [6/30]
+[2026-01-18 02:00:01]   Train Loss: 0.0129, Train Acc: 0.9967
+[2026-01-18 02:00:01]   Val   Loss: 0.0207, Val   Acc: 0.9958
+[2026-01-18 02:00:01]   No improvement. Early stopping counter: 1/5
+[2026-01-18 02:06:34] Epoch [7/30]
+[2026-01-18 02:06:34]   Train Loss: 0.0099, Train Acc: 0.9972
+[2026-01-18 02:06:34]   Val   Loss: 0.0475, Val   Acc: 0.9877
+[2026-01-18 02:06:34]   No improvement. Early stopping counter: 2/5
+[2026-01-18 02:12:55] Epoch [8/30]
+[2026-01-18 02:12:55]   Train Loss: 0.0070, Train Acc: 0.9980
+[2026-01-18 02:12:55]   Val   Loss: 0.0269, Val   Acc: 0.9943
+[2026-01-18 02:12:55]   No improvement. Early stopping counter: 3/5
+[2026-01-18 02:19:06] Epoch [9/30]
+[2026-01-18 02:19:06]   Train Loss: 0.0057, Train Acc: 0.9984
+[2026-01-18 02:19:06]   Val   Loss: 0.0288, Val   Acc: 0.9954
+[2026-01-18 02:19:06]   No improvement. Early stopping counter: 4/5
+[2026-01-18 02:25:18] Epoch [10/30]
+[2026-01-18 02:25:18]   Train Loss: 0.0047, Train Acc: 0.9985
+[2026-01-18 02:25:18]   Val   Loss: 0.0256, Val   Acc: 0.9956
+[2026-01-18 02:25:18]   No improvement. Early stopping counter: 5/5
+[2026-01-18 02:25:18]   Early stopping triggered. Training stopped.
+[2026-01-18 02:25:18] 
+========== BEST MODEL SUMMARY ==========
+[2026-01-18 02:25:18] Best Epoch      : 5
+[2026-01-18 02:25:18] Val Loss        : 0.0205
+[2026-01-18 02:25:18] ========================================
