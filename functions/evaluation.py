@@ -87,6 +87,8 @@ def eval_on_metrics(model, test_loader):
     model.eval()
     device = next(model.parameters()).device
 
+    model.to(device)
+
     y_true = []
     y_pred = []
     y_scores = []
