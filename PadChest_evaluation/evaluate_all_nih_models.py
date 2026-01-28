@@ -250,7 +250,7 @@ def main():
             target_log_dir = os.path.join(model_dir, "logs")
             
         # Create timestamped subfolder
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
         final_log_dir = os.path.join(target_log_dir, timestamp)
         os.makedirs(final_log_dir, exist_ok=True)
         

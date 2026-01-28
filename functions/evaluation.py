@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import torch
 from tqdm import tqdm  
 from sklearn.metrics import (
-    precision_score, recall_score, f1_score,
+    precision_score, recall_score, f1_score, accuracy_score,
     roc_curve, auc ,confusion_matrix
 )
 import torch.nn.functional as F
@@ -108,10 +108,12 @@ def eval_on_metrics(model, test_loader):
     precision = precision_score(y_true, y_pred)
     recall = recall_score(y_true, y_pred)
     f1 = f1_score(y_true, y_pred)
+    accuracy = accuracy_score(y_true, y_pred)
 
     fpr, tpr, thresholds = roc_curve(y_true, y_scores)
     roc_auc = auc(fpr, tpr)
 
+    print(f"Accuracy:  {accuracy:.4f}")
     print(f"Precision: {precision:.4f}")
     print(f"Recall:    {recall:.4f}")
     print(f"F1 Score:  {f1:.4f}")

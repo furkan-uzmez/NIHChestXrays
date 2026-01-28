@@ -9,7 +9,7 @@ def get_logger(log_path='training.log'):
     # Aynı logger birden fazla handler eklenmesini önlemek için:
     if not logger.handlers:
         # Formatlayıcı
-        formatter = logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        formatter = logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y_%m_%d_%H_%M_%S')
 
         # Dosya yazıcı
         file_handler = logging.FileHandler(log_path)
