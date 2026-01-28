@@ -1,0 +1,40 @@
+2026-01-28 22:12:11,819 [INFO] 
+==================================================
+2026-01-28 22:12:11,820 [INFO] Processing: resnet50fullyfinetunebestmodel.pth
+2026-01-28 22:12:11,820 [INFO] ==================================================
+2026-01-28 22:12:11,912 [INFO]   Checkpoint has 2 classes.
+2026-01-28 22:12:12,087 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-28 22:12:12,088 [INFO]   Successfully loaded weights into resnet50
+2026-01-28 22:12:12,102 [INFO] Evaluating...
+2026-01-28 22:12:15,800 [INFO]   Batch 0/143
+2026-01-28 22:12:24,803 [INFO]   Batch 10/143
+2026-01-28 22:12:36,414 [INFO]   Batch 20/143
+2026-01-28 22:12:45,915 [INFO]   Batch 30/143
+2026-01-28 22:12:59,104 [INFO]   Batch 40/143
+2026-01-28 22:13:07,246 [INFO]   Batch 50/143
+2026-01-28 22:13:19,858 [INFO]   Batch 60/143
+2026-01-28 22:13:28,514 [INFO]   Batch 70/143
+2026-01-28 22:13:41,374 [INFO]   Batch 80/143
+2026-01-28 22:13:50,230 [INFO]   Batch 90/143
+2026-01-28 22:14:02,793 [INFO]   Batch 100/143
+2026-01-28 22:14:11,225 [INFO]   Batch 110/143
+2026-01-28 22:14:24,852 [INFO]   Batch 120/143
+2026-01-28 22:14:33,659 [INFO]   Batch 130/143
+2026-01-28 22:14:47,686 [INFO]   Batch 140/143
+2026-01-28 22:14:47,810 [INFO] 
+Results: Acc=0.3304, AUC=0.5488
+2026-01-28 22:14:47,811 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.32      0.99      0.48      1456
+    Abnormal       0.77      0.02      0.04      3099
+
+    accuracy                           0.33      4555
+   macro avg       0.55      0.50      0.26      4555
+weighted avg       0.63      0.33      0.18      4555
+
+2026-01-28 22:14:47,811 [INFO] 
+Confusion Matrix:
+[[1435   21]
+ [3029   70]]

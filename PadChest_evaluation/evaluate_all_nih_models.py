@@ -16,6 +16,7 @@ import numpy as np
 import random
 import warnings
 import logging
+from datetime import datetime
 
 # Import local modules
 from dataset import PadChestBinaryDataset
@@ -248,10 +249,13 @@ def main():
         else:
             target_log_dir = os.path.join(model_dir, "logs")
             
-        os.makedirs(target_log_dir, exist_ok=True)
+        # Create timestamped subfolder
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        final_log_dir = os.path.join(target_log_dir, timestamp)
+        os.makedirs(final_log_dir, exist_ok=True)
         
         model_base = os.path.splitext(os.path.basename(mp))[0]
-        local_log_path = os.path.join(target_log_dir, f"{model_base}_evolution_padchest.log")
+        local_log_path = os.path.join(final_log_dir, f"{model_base}_evolution_padchest.log")
         
         # Add local file handler for this model
         local_handler = logging.FileHandler(local_log_path)
