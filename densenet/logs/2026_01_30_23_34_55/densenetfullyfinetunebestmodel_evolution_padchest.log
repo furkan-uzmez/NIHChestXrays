@@ -1,0 +1,7 @@
+2026-01-30 23:34:55,048 [INFO] 
+==================================================
+2026-01-30 23:34:55,048 [INFO] Processing: densenetfullyfinetunebestmodel.pth
+2026-01-30 23:34:55,048 [INFO] ==================================================
+2026-01-30 23:35:05,757 [INFO]   Checkpoint has 2 classes.
+2026-01-30 23:35:05,877 [INFO]     densenet121 (torchvision) missing: 0, unexpected: 0
+2026-01-30 23:35:05,877 [INFO]   Successfully loaded weights into densenet121

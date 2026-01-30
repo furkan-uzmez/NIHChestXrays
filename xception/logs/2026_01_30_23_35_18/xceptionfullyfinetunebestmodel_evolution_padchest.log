@@ -1,0 +1,39 @@
+2026-01-30 23:35:18,095 [INFO] 
+==================================================
+2026-01-30 23:35:18,095 [INFO] Processing: xceptionfullyfinetunebestmodel.pth
+2026-01-30 23:35:18,095 [INFO] ==================================================
+2026-01-30 23:35:18,242 [INFO]   Checkpoint has 2 classes.
+2026-01-30 23:35:18,506 [INFO]     xception (timm) missing: 0, unexpected: 0
+2026-01-30 23:35:18,506 [INFO]   Successfully loaded weights into xception
+2026-01-30 23:35:18,524 [INFO] Evaluating...
+2026-01-30 23:35:29,477 [INFO]   Batch 0/135
+2026-01-30 23:35:48,988 [INFO]   Batch 10/135
+2026-01-30 23:36:18,936 [INFO]   Batch 20/135
+2026-01-30 23:36:39,481 [INFO]   Batch 30/135
+2026-01-30 23:37:02,056 [INFO]   Batch 40/135
+2026-01-30 23:37:21,685 [INFO]   Batch 50/135
+2026-01-30 23:37:44,740 [INFO]   Batch 60/135
+2026-01-30 23:38:05,952 [INFO]   Batch 70/135
+2026-01-30 23:38:27,977 [INFO]   Batch 80/135
+2026-01-30 23:38:51,040 [INFO]   Batch 90/135
+2026-01-30 23:39:10,273 [INFO]   Batch 100/135
+2026-01-30 23:39:33,984 [INFO]   Batch 110/135
+2026-01-30 23:39:51,751 [INFO]   Batch 120/135
+2026-01-30 23:40:16,556 [INFO]   Batch 130/135
+2026-01-30 23:40:22,553 [INFO] 
+Results: Acc=0.9854, AUC=0.9525
+2026-01-30 23:40:22,554 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.46      0.64      0.53        56
+          PA       1.00      0.99      0.99      4257
+
+    accuracy                           0.99      4313
+   macro avg       0.73      0.82      0.76      4313
+weighted avg       0.99      0.99      0.99      4313
+
+2026-01-30 23:40:22,554 [INFO] 
+Confusion Matrix:
+[[  36   20]
+ [  43 4214]]

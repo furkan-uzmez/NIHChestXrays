@@ -1,0 +1,39 @@
+2026-01-30 23:40:22,556 [INFO] 
+==================================================
+2026-01-30 23:40:22,556 [INFO] Processing: densenetfullyfinetunebestmodel.pth
+2026-01-30 23:40:22,556 [INFO] ==================================================
+2026-01-30 23:40:22,697 [INFO]   Checkpoint has 2 classes.
+2026-01-30 23:40:22,835 [INFO]     densenet121 (torchvision) missing: 0, unexpected: 0
+2026-01-30 23:40:22,835 [INFO]   Successfully loaded weights into densenet121
+2026-01-30 23:40:22,857 [INFO] Evaluating...
+2026-01-30 23:40:31,372 [INFO]   Batch 0/135
+2026-01-30 23:40:50,307 [INFO]   Batch 10/135
+2026-01-30 23:41:17,368 [INFO]   Batch 20/135
+2026-01-30 23:41:38,219 [INFO]   Batch 30/135
+2026-01-30 23:42:04,262 [INFO]   Batch 40/135
+2026-01-30 23:42:24,534 [INFO]   Batch 50/135
+2026-01-30 23:42:50,151 [INFO]   Batch 60/135
+2026-01-30 23:43:10,755 [INFO]   Batch 70/135
+2026-01-30 23:43:38,611 [INFO]   Batch 80/135
+2026-01-30 23:43:57,190 [INFO]   Batch 90/135
+2026-01-30 23:44:21,355 [INFO]   Batch 100/135
+2026-01-30 23:44:42,547 [INFO]   Batch 110/135
+2026-01-30 23:45:06,322 [INFO]   Batch 120/135
+2026-01-30 23:45:29,012 [INFO]   Batch 130/135
+2026-01-30 23:45:35,693 [INFO] 
+Results: Acc=0.9935, AUC=0.9104
+2026-01-30 23:45:35,694 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.85      0.61      0.71        56
+          PA       0.99      1.00      1.00      4257
+
+    accuracy                           0.99      4313
+   macro avg       0.92      0.80      0.85      4313
+weighted avg       0.99      0.99      0.99      4313
+
+2026-01-30 23:45:35,694 [INFO] 
+Confusion Matrix:
+[[  34   22]
+ [   6 4251]]

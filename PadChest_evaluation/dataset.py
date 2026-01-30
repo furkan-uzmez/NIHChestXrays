@@ -78,44 +78,33 @@ class PadChestBinaryDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-    """def __getitem__(self, idx):
-        if torch.is_tensor(idx):
-            idx = idx.tolist()
-
-        # Get image path
-        img_name = self.data.iloc[idx]['ImageID']
-        img_path = os.path.join(self.img_dir, img_name)
-        
-        # Try adding .png extension if file not found
-        if not os.path.exists(img_path):
-            if not img_name.endswith('.png'):
-                img_path = os.path.join(self.img_dir, img_name + '.png')
-        
-        # Load image or create placeholder
-        if not os.path.exists(img_path):
-            image = Image.new('RGB', (224, 224), color='black')
-        else:
-            try:
-                image = Image.open(img_path).convert('RGB')
-            except Exception:
-                image = Image.new('RGB', (224, 224), color='black')
-
-        # Get binary label
-        label_name = self.data.iloc[idx][self.label_col]
-        label = self.class_to_idx[label_name]
-
-        if self.transform:
-            image = self.transform(image)
-
-        return image, label"""
+    
     def __getitem__(self, idx):
         row = self.data.iloc[idx]
-
         img_path = row['image_path']
-        label_str = row[self.label_col]   # 'AP' or 'PA'
+        
+        # Etiketleri TERS ÇEVİRMİYORUZ (Hile yok!)
+        # Orijinal mantık: AP=0, PA=1
+        label_str = row[self.label_col]
         label = self.class_to_idx[label_str]
 
-        image = Image.open(img_path).convert("RGB")
+        # 1. Görüntüyü Ham (Raw) Olarak Aç
+        image = Image.open(img_path) 
+        
+        # 2. 16-bit Kontrolü ve 8-bit Dönüşümü (Rescaling)
+        # Görüntüyü numpy dizisine çevirip kontrol ediyoruz
+        import numpy as np
+        img_array = np.array(image)
+        
+        if img_array.dtype == np.uint16 or img_array.max() > 255:
+            # 16-bit görüntüyü 8-bit'e ölçekle (0-65535 -> 0-255)
+            # Min-Max Normalizasyonu ile en sağlıklı dönüşümü yapalım:
+            img_array = img_array.astype(np.float32)
+            img_array = (img_array - img_array.min()) / (img_array.max() - img_array.min() + 1e-8) * 255.0
+            image = Image.fromarray(img_array.astype(np.uint8))
+        
+        # 3. Şimdi RGB'ye çevir (Modelin beklediği format)
+        image = image.convert("RGB")
 
         if self.transform:
             image = self.transform(image)

@@ -1,0 +1,21 @@
+2026-01-30 23:34:54,433 [INFO] 
+==================================================
+2026-01-30 23:34:54,433 [INFO] Processing: xceptionfullyfinetunebestmodel.pth
+2026-01-30 23:34:54,433 [INFO] ==================================================
+2026-01-30 23:34:54,690 [INFO]   Checkpoint has 2 classes.
+2026-01-30 23:34:54,967 [INFO]     xception (timm) missing: 0, unexpected: 0
+2026-01-30 23:34:54,968 [INFO]   Successfully loaded weights into xception
+2026-01-30 23:34:54,986 [INFO] Evaluating...
+2026-01-30 23:34:55,047 [ERROR] Evaluation failed: Caught NameError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/furkan/miniconda3/envs/ml/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/furkan/miniconda3/envs/ml/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/furkan/Projects/NIHChestXrays/PadChest_evaluation/dataset.py", line 125, in __getitem__
+    img_array = np.array(image)
+                ^^
+NameError: name 'np' is not defined
+
