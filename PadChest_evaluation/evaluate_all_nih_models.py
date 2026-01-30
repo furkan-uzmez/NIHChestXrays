@@ -75,7 +75,7 @@ def parse_args():
         "--csv_file",
         type=str,
         default=None,
-        help="Path to dataset CSV (default: {project_root}/PadChest-GR/dataset/master_table_binary.csv)"
+        help="Path to dataset CSV (default: {project_root}/PadChest-GR/dataset/padchest_merged.csv)"
     )
     parser.add_argument(
         "--image_dir",
@@ -150,7 +150,7 @@ def parse_args():
     
     # Set defaults based on project_root
     if args.csv_file is None:
-        args.csv_file = os.path.join(args.project_root, "PadChest-GR/dataset/master_table_binary.csv")
+        args.csv_file = os.path.join(args.project_root, "PadChest-GR/dataset/padchest_merged.csv")
     if args.image_dir is None:
         args.image_dir = os.path.join(args.project_root, "PadChest-GR/dataset/Padchest_GR_files/PadChest_GR")
     if args.model_dir is None:
