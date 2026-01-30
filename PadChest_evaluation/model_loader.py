@@ -158,7 +158,7 @@ def load_model_and_adjust(model_path, target_classes, device):
     elif 'xception' in model_name:
         arch_candidates = ['xception']
     elif 'senet' in model_name:
-        arch_candidates = ['seresnet50', 'resnet50']
+        arch_candidates = ['senet154', 'seresnet50', 'seresnext50_32x4d', 'resnet50']
     else:
         arch_candidates = ['resnet50', 'resnet34', 'resnet18']
 
