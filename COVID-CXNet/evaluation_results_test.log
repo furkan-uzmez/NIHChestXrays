@@ -1,0 +1,1221 @@
+2026-01-31 23:28:15,892 [INFO] Logging initialized. Output file: /home/furkan/Projects/NIHChestXrays/COVID-CXNet/evaluation_results_test.log
+2026-01-31 23:28:15,892 [INFO] Starting COVID-CXNet Models Evaluation script...
+2026-01-31 23:28:15,894 [INFO] Random seed set to 42
+2026-01-31 23:28:15,895 [INFO] Torch version: 2.6.0+cu124
+2026-01-31 23:28:15,895 [INFO] Using device: cuda
+2026-01-31 23:28:15,895 [INFO] Configuration:
+2026-01-31 23:28:15,895 [INFO]   CSV file: /home/furkan/Projects/NIHChestXrays/COVID-CXNet/covidx/covidx_merged.csv
+2026-01-31 23:28:15,895 [INFO]   Root dir: /home/furkan/Projects/NIHChestXrays/COVID-CXNet
+2026-01-31 23:28:15,895 [INFO]   Model dir: /home/furkan/Projects/NIHChestXrays
+2026-01-31 23:28:15,895 [INFO]   Split: test
+2026-01-31 23:28:15,895 [INFO]   Batch size: 32
+2026-01-31 23:28:16,187 [INFO] 
+Found 13 models matching criteria.
+2026-01-31 23:28:16,188 [INFO] 
+Initializing Dataset...
+2026-01-31 23:28:16,422 [INFO] Dataset classes: ['AP', 'PA']
+2026-01-31 23:28:16,422 [INFO] 
+==================================================
+2026-01-31 23:28:16,423 [INFO] Processing: xceptionfullyfinetunebestmodel.pth
+2026-01-31 23:28:16,423 [INFO] ==================================================
+2026-01-31 23:28:16,664 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:28:16,937 [INFO]     xception (timm) missing: 0, unexpected: 0
+2026-01-31 23:28:16,937 [INFO]   Successfully loaded weights into xception
+2026-01-31 23:28:16,964 [INFO] Evaluating...
+2026-01-31 23:28:18,217 [INFO]   Batch 0/224
+2026-01-31 23:28:18,948 [INFO]   Batch 10/224
+2026-01-31 23:28:20,449 [INFO]   Batch 20/224
+2026-01-31 23:28:21,703 [INFO]   Batch 30/224
+2026-01-31 23:28:23,303 [INFO]   Batch 40/224
+2026-01-31 23:28:24,541 [INFO]   Batch 50/224
+2026-01-31 23:28:26,143 [INFO]   Batch 60/224
+2026-01-31 23:28:27,421 [INFO]   Batch 70/224
+2026-01-31 23:28:28,917 [INFO]   Batch 80/224
+2026-01-31 23:28:30,124 [INFO]   Batch 90/224
+2026-01-31 23:28:31,637 [INFO]   Batch 100/224
+2026-01-31 23:28:32,867 [INFO]   Batch 110/224
+2026-01-31 23:28:34,399 [INFO]   Batch 120/224
+2026-01-31 23:28:35,711 [INFO]   Batch 130/224
+2026-01-31 23:28:37,206 [INFO]   Batch 140/224
+2026-01-31 23:28:38,510 [INFO]   Batch 150/224
+2026-01-31 23:28:40,059 [INFO]   Batch 160/224
+2026-01-31 23:28:41,401 [INFO]   Batch 170/224
+2026-01-31 23:28:42,860 [INFO]   Batch 180/224
+2026-01-31 23:28:44,192 [INFO]   Batch 190/224
+2026-01-31 23:28:45,704 [INFO]   Batch 200/224
+2026-01-31 23:28:46,997 [INFO]   Batch 210/224
+2026-01-31 23:28:48,566 [INFO]   Batch 220/224
+2026-01-31 23:28:48,811 [INFO] 
+Results: Acc=0.8538, AUC=0.9296
+2026-01-31 23:28:48,812 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.84      0.89      0.86      3737
+          PA       0.87      0.81      0.84      3406
+
+    accuracy                           0.85      7143
+   macro avg       0.86      0.85      0.85      7143
+weighted avg       0.86      0.85      0.85      7143
+
+2026-01-31 23:28:48,812 [INFO] 
+Confusion Matrix:
+[[3340  397]
+ [ 647 2759]]
+2026-01-31 23:28:48,812 [INFO] 
+==================================================
+2026-01-31 23:28:48,812 [INFO] Processing: densenetfullyfinetunebestmodel.pth
+2026-01-31 23:28:48,812 [INFO] ==================================================
+2026-01-31 23:28:48,942 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:28:49,078 [INFO]     densenet121 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:28:49,078 [INFO]   Successfully loaded weights into densenet121
+2026-01-31 23:28:49,098 [INFO] Evaluating...
+2026-01-31 23:28:49,837 [INFO]   Batch 0/224
+2026-01-31 23:28:51,006 [INFO]   Batch 10/224
+2026-01-31 23:28:52,598 [INFO]   Batch 20/224
+2026-01-31 23:28:53,822 [INFO]   Batch 30/224
+2026-01-31 23:28:55,417 [INFO]   Batch 40/224
+2026-01-31 23:28:56,638 [INFO]   Batch 50/224
+2026-01-31 23:28:58,245 [INFO]   Batch 60/224
+2026-01-31 23:28:59,520 [INFO]   Batch 70/224
+2026-01-31 23:29:00,999 [INFO]   Batch 80/224
+2026-01-31 23:29:02,214 [INFO]   Batch 90/224
+2026-01-31 23:29:03,729 [INFO]   Batch 100/224
+2026-01-31 23:29:04,965 [INFO]   Batch 110/224
+2026-01-31 23:29:06,576 [INFO]   Batch 120/224
+2026-01-31 23:29:07,853 [INFO]   Batch 130/224
+2026-01-31 23:29:09,411 [INFO]   Batch 140/224
+2026-01-31 23:29:10,685 [INFO]   Batch 150/224
+2026-01-31 23:29:12,327 [INFO]   Batch 160/224
+2026-01-31 23:29:13,565 [INFO]   Batch 170/224
+2026-01-31 23:29:15,111 [INFO]   Batch 180/224
+2026-01-31 23:29:16,362 [INFO]   Batch 190/224
+2026-01-31 23:29:17,934 [INFO]   Batch 200/224
+2026-01-31 23:29:19,265 [INFO]   Batch 210/224
+2026-01-31 23:29:20,857 [INFO]   Batch 220/224
+2026-01-31 23:29:21,150 [INFO] 
+Results: Acc=0.8405, AUC=0.9297
+2026-01-31 23:29:21,150 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.90      0.78      0.84      3737
+          PA       0.79      0.91      0.84      3406
+
+    accuracy                           0.84      7143
+   macro avg       0.85      0.84      0.84      7143
+weighted avg       0.85      0.84      0.84      7143
+
+2026-01-31 23:29:21,150 [INFO] 
+Confusion Matrix:
+[[2917  820]
+ [ 319 3087]]
+2026-01-31 23:29:21,150 [INFO] 
+==================================================
+2026-01-31 23:29:21,150 [INFO] Processing: radimagenet_resnet50_finetuned.pth
+2026-01-31 23:29:21,150 [INFO] ==================================================
+2026-01-31 23:29:21,274 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:29:21,582 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:29:21,582 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:29:21,606 [INFO] Evaluating...
+2026-01-31 23:29:22,281 [INFO]   Batch 0/224
+2026-01-31 23:29:23,487 [INFO]   Batch 10/224
+2026-01-31 23:29:24,976 [INFO]   Batch 20/224
+2026-01-31 23:29:26,210 [INFO]   Batch 30/224
+2026-01-31 23:29:27,829 [INFO]   Batch 40/224
+2026-01-31 23:29:29,081 [INFO]   Batch 50/224
+2026-01-31 23:29:30,688 [INFO]   Batch 60/224
+2026-01-31 23:29:32,009 [INFO]   Batch 70/224
+2026-01-31 23:29:33,566 [INFO]   Batch 80/224
+2026-01-31 23:29:34,787 [INFO]   Batch 90/224
+2026-01-31 23:29:36,261 [INFO]   Batch 100/224
+2026-01-31 23:29:37,548 [INFO]   Batch 110/224
+2026-01-31 23:29:39,007 [INFO]   Batch 120/224
+2026-01-31 23:29:40,418 [INFO]   Batch 130/224
+2026-01-31 23:29:41,894 [INFO]   Batch 140/224
+2026-01-31 23:29:43,322 [INFO]   Batch 150/224
+2026-01-31 23:29:44,856 [INFO]   Batch 160/224
+2026-01-31 23:29:46,156 [INFO]   Batch 170/224
+2026-01-31 23:29:47,730 [INFO]   Batch 180/224
+2026-01-31 23:29:49,030 [INFO]   Batch 190/224
+2026-01-31 23:29:50,563 [INFO]   Batch 200/224
+2026-01-31 23:29:51,879 [INFO]   Batch 210/224
+2026-01-31 23:29:53,496 [INFO]   Batch 220/224
+2026-01-31 23:29:53,723 [INFO] 
+Results: Acc=0.5465, AUC=0.6005
+2026-01-31 23:29:53,723 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.62      0.35      0.45      3737
+          PA       0.52      0.76      0.61      3406
+
+    accuracy                           0.55      7143
+   macro avg       0.57      0.56      0.53      7143
+weighted avg       0.57      0.55      0.53      7143
+
+2026-01-31 23:29:53,723 [INFO] 
+Confusion Matrix:
+[[1322 2415]
+ [ 824 2582]]
+2026-01-31 23:29:53,723 [INFO] 
+==================================================
+2026-01-31 23:29:53,723 [INFO] Processing: 512x512resnet50nofinetunebestmodel.pth
+2026-01-31 23:29:53,723 [INFO] ==================================================
+2026-01-31 23:29:53,876 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:29:54,203 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:29:54,203 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:29:54,221 [INFO] Evaluating...
+2026-01-31 23:29:54,908 [INFO]   Batch 0/224
+2026-01-31 23:29:56,114 [INFO]   Batch 10/224
+2026-01-31 23:29:57,611 [INFO]   Batch 20/224
+2026-01-31 23:29:58,831 [INFO]   Batch 30/224
+2026-01-31 23:30:00,426 [INFO]   Batch 40/224
+2026-01-31 23:30:01,670 [INFO]   Batch 50/224
+2026-01-31 23:30:03,295 [INFO]   Batch 60/224
+2026-01-31 23:30:04,607 [INFO]   Batch 70/224
+2026-01-31 23:30:06,122 [INFO]   Batch 80/224
+2026-01-31 23:30:07,332 [INFO]   Batch 90/224
+2026-01-31 23:30:08,891 [INFO]   Batch 100/224
+2026-01-31 23:30:10,125 [INFO]   Batch 110/224
+2026-01-31 23:30:11,650 [INFO]   Batch 120/224
+2026-01-31 23:30:12,907 [INFO]   Batch 130/224
+2026-01-31 23:30:14,515 [INFO]   Batch 140/224
+2026-01-31 23:30:15,773 [INFO]   Batch 150/224
+2026-01-31 23:30:17,366 [INFO]   Batch 160/224
+2026-01-31 23:30:18,596 [INFO]   Batch 170/224
+2026-01-31 23:30:20,171 [INFO]   Batch 180/224
+2026-01-31 23:30:21,433 [INFO]   Batch 190/224
+2026-01-31 23:30:23,011 [INFO]   Batch 200/224
+2026-01-31 23:30:24,252 [INFO]   Batch 210/224
+2026-01-31 23:30:25,850 [INFO]   Batch 220/224
+2026-01-31 23:30:26,046 [INFO] 
+Results: Acc=0.6917, AUC=0.7644
+2026-01-31 23:30:26,046 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.68      0.79      0.73      3737
+          PA       0.72      0.58      0.64      3406
+
+    accuracy                           0.69      7143
+   macro avg       0.70      0.69      0.69      7143
+weighted avg       0.70      0.69      0.69      7143
+
+2026-01-31 23:30:26,046 [INFO] 
+Confusion Matrix:
+[[2960  777]
+ [1425 1981]]
+2026-01-31 23:30:26,046 [INFO] 
+==================================================
+2026-01-31 23:30:26,046 [INFO] Processing: resnet50nofinetunebestmodel.pth
+2026-01-31 23:30:26,046 [INFO] ==================================================
+2026-01-31 23:30:26,193 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:30:26,484 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:30:26,485 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:30:26,504 [INFO] Evaluating...
+2026-01-31 23:30:27,181 [INFO]   Batch 0/224
+2026-01-31 23:30:28,376 [INFO]   Batch 10/224
+2026-01-31 23:30:29,856 [INFO]   Batch 20/224
+2026-01-31 23:30:31,106 [INFO]   Batch 30/224
+2026-01-31 23:30:32,674 [INFO]   Batch 40/224
+2026-01-31 23:30:33,954 [INFO]   Batch 50/224
+2026-01-31 23:30:35,485 [INFO]   Batch 60/224
+2026-01-31 23:30:36,870 [INFO]   Batch 70/224
+2026-01-31 23:30:38,234 [INFO]   Batch 80/224
+2026-01-31 23:30:39,530 [INFO]   Batch 90/224
+2026-01-31 23:30:40,978 [INFO]   Batch 100/224
+2026-01-31 23:30:42,316 [INFO]   Batch 110/224
+2026-01-31 23:30:43,745 [INFO]   Batch 120/224
+2026-01-31 23:30:45,114 [INFO]   Batch 130/224
+2026-01-31 23:30:46,563 [INFO]   Batch 140/224
+2026-01-31 23:30:47,935 [INFO]   Batch 150/224
+2026-01-31 23:30:49,421 [INFO]   Batch 160/224
+2026-01-31 23:30:50,775 [INFO]   Batch 170/224
+2026-01-31 23:30:52,281 [INFO]   Batch 180/224
+2026-01-31 23:30:53,707 [INFO]   Batch 190/224
+2026-01-31 23:30:55,112 [INFO]   Batch 200/224
+2026-01-31 23:30:56,572 [INFO]   Batch 210/224
+2026-01-31 23:30:57,929 [INFO]   Batch 220/224
+2026-01-31 23:30:58,388 [INFO] 
+Results: Acc=0.7981, AUC=0.8964
+2026-01-31 23:30:58,388 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.88      0.71      0.79      3737
+          PA       0.74      0.90      0.81      3406
+
+    accuracy                           0.80      7143
+   macro avg       0.81      0.80      0.80      7143
+weighted avg       0.81      0.80      0.80      7143
+
+2026-01-31 23:30:58,388 [INFO] 
+Confusion Matrix:
+[[2650 1087]
+ [ 355 3051]]
+2026-01-31 23:30:58,388 [INFO] 
+==================================================
+2026-01-31 23:30:58,388 [INFO] Processing: resnet50fullyfinetunebestmodel.pth
+2026-01-31 23:30:58,388 [INFO] ==================================================
+2026-01-31 23:30:58,528 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:30:58,820 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:30:58,820 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:30:58,839 [INFO] Evaluating...
+2026-01-31 23:30:59,527 [INFO]   Batch 0/224
+2026-01-31 23:31:00,738 [INFO]   Batch 10/224
+2026-01-31 23:31:02,301 [INFO]   Batch 20/224
+2026-01-31 23:31:03,561 [INFO]   Batch 30/224
+2026-01-31 23:31:05,219 [INFO]   Batch 40/224
+2026-01-31 23:31:06,423 [INFO]   Batch 50/224
+2026-01-31 23:31:08,045 [INFO]   Batch 60/224
+2026-01-31 23:31:09,277 [INFO]   Batch 70/224
+2026-01-31 23:31:10,782 [INFO]   Batch 80/224
+2026-01-31 23:31:11,979 [INFO]   Batch 90/224
+2026-01-31 23:31:13,600 [INFO]   Batch 100/224
+2026-01-31 23:31:14,814 [INFO]   Batch 110/224
+2026-01-31 23:31:16,362 [INFO]   Batch 120/224
+2026-01-31 23:31:17,639 [INFO]   Batch 130/224
+2026-01-31 23:31:19,253 [INFO]   Batch 140/224
+2026-01-31 23:31:20,573 [INFO]   Batch 150/224
+2026-01-31 23:31:22,152 [INFO]   Batch 160/224
+2026-01-31 23:31:23,378 [INFO]   Batch 170/224
+2026-01-31 23:31:24,980 [INFO]   Batch 180/224
+2026-01-31 23:31:26,244 [INFO]   Batch 190/224
+2026-01-31 23:31:27,830 [INFO]   Batch 200/224
+2026-01-31 23:31:29,080 [INFO]   Batch 210/224
+2026-01-31 23:31:30,683 [INFO]   Batch 220/224
+2026-01-31 23:31:30,875 [INFO] 
+Results: Acc=0.7423, AUC=0.8703
+2026-01-31 23:31:30,875 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.86      0.60      0.71      3737
+          PA       0.67      0.90      0.77      3406
+
+    accuracy                           0.74      7143
+   macro avg       0.77      0.75      0.74      7143
+weighted avg       0.77      0.74      0.74      7143
+
+2026-01-31 23:31:30,875 [INFO] 
+Confusion Matrix:
+[[2252 1485]
+ [ 356 3050]]
+2026-01-31 23:31:30,875 [INFO] 
+==================================================
+2026-01-31 23:31:30,875 [INFO] Processing: resnet50halffinetunebestmodel.pth
+2026-01-31 23:31:30,875 [INFO] ==================================================
+2026-01-31 23:31:31,000 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:31:31,297 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:31:31,297 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:31:31,316 [INFO] Evaluating...
+2026-01-31 23:31:32,000 [INFO]   Batch 0/224
+2026-01-31 23:31:33,247 [INFO]   Batch 10/224
+2026-01-31 23:31:34,775 [INFO]   Batch 20/224
+2026-01-31 23:31:35,999 [INFO]   Batch 30/224
+2026-01-31 23:31:37,593 [INFO]   Batch 40/224
+2026-01-31 23:31:38,819 [INFO]   Batch 50/224
+2026-01-31 23:31:40,437 [INFO]   Batch 60/224
+2026-01-31 23:31:41,756 [INFO]   Batch 70/224
+2026-01-31 23:31:43,171 [INFO]   Batch 80/224
+2026-01-31 23:31:44,435 [INFO]   Batch 90/224
+2026-01-31 23:31:45,891 [INFO]   Batch 100/224
+2026-01-31 23:31:47,211 [INFO]   Batch 110/224
+2026-01-31 23:31:48,652 [INFO]   Batch 120/224
+2026-01-31 23:31:50,038 [INFO]   Batch 130/224
+2026-01-31 23:31:51,536 [INFO]   Batch 140/224
+2026-01-31 23:31:52,892 [INFO]   Batch 150/224
+2026-01-31 23:31:54,380 [INFO]   Batch 160/224
+2026-01-31 23:31:55,705 [INFO]   Batch 170/224
+2026-01-31 23:31:57,187 [INFO]   Batch 180/224
+2026-01-31 23:31:58,515 [INFO]   Batch 190/224
+2026-01-31 23:32:00,058 [INFO]   Batch 200/224
+2026-01-31 23:32:01,350 [INFO]   Batch 210/224
+2026-01-31 23:32:02,901 [INFO]   Batch 220/224
+2026-01-31 23:32:03,148 [INFO] 
+Results: Acc=0.8337, AUC=0.9349
+2026-01-31 23:32:03,148 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.90      0.76      0.83      3737
+          PA       0.78      0.91      0.84      3406
+
+    accuracy                           0.83      7143
+   macro avg       0.84      0.84      0.83      7143
+weighted avg       0.84      0.83      0.83      7143
+
+2026-01-31 23:32:03,148 [INFO] 
+Confusion Matrix:
+[[2853  884]
+ [ 304 3102]]
+2026-01-31 23:32:03,148 [INFO] 
+==================================================
+2026-01-31 23:32:03,148 [INFO] Processing: best_model.pth
+2026-01-31 23:32:03,149 [INFO] ==================================================
+2026-01-31 23:32:03,221 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:32:03,503 [INFO]     Failed resnet50 load attempt: Error(s) in loading state_dict for ResNet:
+	size mismatch for layer1.0.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 1, 1]).
+	size mismatch for layer1.1.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer2.0.conv1.weight: copying a param with shape torch.Size([128, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.0.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.0.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.0.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for fc.weight: copying a param with shape torch.Size([2, 512]) from checkpoint, the shape in current model is torch.Size([2, 2048]).
+2026-01-31 23:32:03,733 [INFO]     resnet34 (torchvision) missing: 80, unexpected: 0
+2026-01-31 23:32:03,734 [INFO]   Successfully loaded weights into resnet34
+2026-01-31 23:32:03,749 [INFO] Evaluating...
+2026-01-31 23:32:04,417 [INFO]   Batch 0/224
+2026-01-31 23:32:05,602 [INFO]   Batch 10/224
+2026-01-31 23:32:07,158 [INFO]   Batch 20/224
+2026-01-31 23:32:08,359 [INFO]   Batch 30/224
+2026-01-31 23:32:10,014 [INFO]   Batch 40/224
+2026-01-31 23:32:11,175 [INFO]   Batch 50/224
+2026-01-31 23:32:12,845 [INFO]   Batch 60/224
+2026-01-31 23:32:14,026 [INFO]   Batch 70/224
+2026-01-31 23:32:15,589 [INFO]   Batch 80/224
+2026-01-31 23:32:16,733 [INFO]   Batch 90/224
+2026-01-31 23:32:18,307 [INFO]   Batch 100/224
+2026-01-31 23:32:19,504 [INFO]   Batch 110/224
+2026-01-31 23:32:21,081 [INFO]   Batch 120/224
+2026-01-31 23:32:22,293 [INFO]   Batch 130/224
+2026-01-31 23:32:23,882 [INFO]   Batch 140/224
+2026-01-31 23:32:25,099 [INFO]   Batch 150/224
+2026-01-31 23:32:26,742 [INFO]   Batch 160/224
+2026-01-31 23:32:27,938 [INFO]   Batch 170/224
+2026-01-31 23:32:29,553 [INFO]   Batch 180/224
+2026-01-31 23:32:30,744 [INFO]   Batch 190/224
+2026-01-31 23:32:32,402 [INFO]   Batch 200/224
+2026-01-31 23:32:33,613 [INFO]   Batch 210/224
+2026-01-31 23:32:35,266 [INFO]   Batch 220/224
+2026-01-31 23:32:35,406 [INFO] 
+Results: Acc=0.4768, AUC=0.5000
+2026-01-31 23:32:35,406 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.00      0.00      0.00      3737
+          PA       0.48      1.00      0.65      3406
+
+    accuracy                           0.48      7143
+   macro avg       0.24      0.50      0.32      7143
+weighted avg       0.23      0.48      0.31      7143
+
+2026-01-31 23:32:35,406 [INFO] 
+Confusion Matrix:
+[[   0 3737]
+ [   0 3406]]
+2026-01-31 23:32:35,406 [INFO] 
+==================================================
+2026-01-31 23:32:35,406 [INFO] Processing: mobilenetfullyfinetunebestmodel.pth
+2026-01-31 23:32:35,406 [INFO] ==================================================
+2026-01-31 23:32:35,462 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:32:35,510 [INFO]     mobilenet_v2 (torchvision) missing: 262, unexpected: 312
+2026-01-31 23:32:35,554 [INFO]     Timm error for mobilenetv2_100: Error(s) in loading state_dict for EfficientNet:
+	size mismatch for conv_stem.weight: copying a param with shape torch.Size([16, 3, 3, 3]) from checkpoint, the shape in current model is torch.Size([32, 3, 3, 3]).
+	size mismatch for bn1.weight: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for bn1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for bn1.running_mean: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for bn1.running_var: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.0.0.conv_dw.weight: copying a param with shape torch.Size([16, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([32, 1, 3, 3]).
+	size mismatch for blocks.0.0.bn1.weight: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.0.0.bn1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.0.0.bn1.running_mean: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.0.0.bn1.running_var: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.0.0.conv_pw.weight: copying a param with shape torch.Size([16, 16, 1, 1]) from checkpoint, the shape in current model is torch.Size([16, 32, 1, 1]).
+	size mismatch for blocks.1.0.conv_pw.weight: copying a param with shape torch.Size([64, 16, 1, 1]) from checkpoint, the shape in current model is torch.Size([96, 16, 1, 1]).
+	size mismatch for blocks.1.0.bn1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn1.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn1.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.conv_dw.weight: copying a param with shape torch.Size([64, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([96, 1, 3, 3]).
+	size mismatch for blocks.1.0.bn2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn2.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.bn2.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.1.0.conv_pwl.weight: copying a param with shape torch.Size([24, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([24, 96, 1, 1]).
+	size mismatch for blocks.1.1.conv_pw.weight: copying a param with shape torch.Size([72, 24, 1, 1]) from checkpoint, the shape in current model is torch.Size([144, 24, 1, 1]).
+	size mismatch for blocks.1.1.bn1.weight: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn1.bias: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn1.running_mean: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn1.running_var: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.conv_dw.weight: copying a param with shape torch.Size([72, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([144, 1, 3, 3]).
+	size mismatch for blocks.1.1.bn2.weight: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn2.bias: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn2.running_mean: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.bn2.running_var: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.1.1.conv_pwl.weight: copying a param with shape torch.Size([24, 72, 1, 1]) from checkpoint, the shape in current model is torch.Size([24, 144, 1, 1]).
+	size mismatch for blocks.2.0.conv_pw.weight: copying a param with shape torch.Size([72, 24, 1, 1]) from checkpoint, the shape in current model is torch.Size([144, 24, 1, 1]).
+	size mismatch for blocks.2.0.bn1.weight: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn1.bias: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn1.running_mean: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn1.running_var: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.conv_dw.weight: copying a param with shape torch.Size([72, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([144, 1, 3, 3]).
+	size mismatch for blocks.2.0.bn2.weight: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn2.bias: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn2.running_mean: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.bn2.running_var: copying a param with shape torch.Size([72]) from checkpoint, the shape in current model is torch.Size([144]).
+	size mismatch for blocks.2.0.conv_pwl.weight: copying a param with shape torch.Size([40, 72, 1, 1]) from checkpoint, the shape in current model is torch.Size([32, 144, 1, 1]).
+	size mismatch for blocks.2.0.bn3.weight: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.0.bn3.bias: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.0.bn3.running_mean: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.0.bn3.running_var: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.1.conv_pw.weight: copying a param with shape torch.Size([120, 40, 1, 1]) from checkpoint, the shape in current model is torch.Size([192, 32, 1, 1]).
+	size mismatch for blocks.2.1.bn1.weight: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn1.bias: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn1.running_mean: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn1.running_var: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.conv_dw.weight: copying a param with shape torch.Size([120, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([192, 1, 3, 3]).
+	size mismatch for blocks.2.1.bn2.weight: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn2.bias: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn2.running_mean: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.bn2.running_var: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.1.conv_pwl.weight: copying a param with shape torch.Size([40, 120, 1, 1]) from checkpoint, the shape in current model is torch.Size([32, 192, 1, 1]).
+	size mismatch for blocks.2.1.bn3.weight: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.1.bn3.bias: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.1.bn3.running_mean: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.1.bn3.running_var: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.2.conv_pw.weight: copying a param with shape torch.Size([120, 40, 1, 1]) from checkpoint, the shape in current model is torch.Size([192, 32, 1, 1]).
+	size mismatch for blocks.2.2.bn1.weight: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn1.bias: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn1.running_mean: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn1.running_var: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.conv_dw.weight: copying a param with shape torch.Size([120, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([192, 1, 3, 3]).
+	size mismatch for blocks.2.2.bn2.weight: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn2.bias: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn2.running_mean: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.bn2.running_var: copying a param with shape torch.Size([120]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.2.2.conv_pwl.weight: copying a param with shape torch.Size([40, 120, 1, 1]) from checkpoint, the shape in current model is torch.Size([32, 192, 1, 1]).
+	size mismatch for blocks.2.2.bn3.weight: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.2.bn3.bias: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.2.bn3.running_mean: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.2.2.bn3.running_var: copying a param with shape torch.Size([40]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for blocks.3.0.conv_pw.weight: copying a param with shape torch.Size([240, 40, 1, 1]) from checkpoint, the shape in current model is torch.Size([192, 32, 1, 1]).
+	size mismatch for blocks.3.0.bn1.weight: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn1.bias: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn1.running_mean: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn1.running_var: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.conv_dw.weight: copying a param with shape torch.Size([240, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([192, 1, 3, 3]).
+	size mismatch for blocks.3.0.bn2.weight: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn2.bias: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn2.running_mean: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.bn2.running_var: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for blocks.3.0.conv_pwl.weight: copying a param with shape torch.Size([80, 240, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 192, 1, 1]).
+	size mismatch for blocks.3.0.bn3.weight: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.0.bn3.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.0.bn3.running_mean: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.0.bn3.running_var: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.1.conv_pw.weight: copying a param with shape torch.Size([200, 80, 1, 1]) from checkpoint, the shape in current model is torch.Size([384, 64, 1, 1]).
+	size mismatch for blocks.3.1.bn1.weight: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn1.bias: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn1.running_mean: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn1.running_var: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.conv_dw.weight: copying a param with shape torch.Size([200, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([384, 1, 3, 3]).
+	size mismatch for blocks.3.1.bn2.weight: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn2.bias: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn2.running_mean: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.bn2.running_var: copying a param with shape torch.Size([200]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.1.conv_pwl.weight: copying a param with shape torch.Size([80, 200, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 384, 1, 1]).
+	size mismatch for blocks.3.1.bn3.weight: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.1.bn3.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.1.bn3.running_mean: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.1.bn3.running_var: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.2.conv_pw.weight: copying a param with shape torch.Size([184, 80, 1, 1]) from checkpoint, the shape in current model is torch.Size([384, 64, 1, 1]).
+	size mismatch for blocks.3.2.bn1.weight: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn1.bias: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn1.running_mean: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn1.running_var: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.conv_dw.weight: copying a param with shape torch.Size([184, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([384, 1, 3, 3]).
+	size mismatch for blocks.3.2.bn2.weight: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn2.bias: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn2.running_mean: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.bn2.running_var: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.2.conv_pwl.weight: copying a param with shape torch.Size([80, 184, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 384, 1, 1]).
+	size mismatch for blocks.3.2.bn3.weight: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.2.bn3.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.2.bn3.running_mean: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.2.bn3.running_var: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.3.conv_pw.weight: copying a param with shape torch.Size([184, 80, 1, 1]) from checkpoint, the shape in current model is torch.Size([384, 64, 1, 1]).
+	size mismatch for blocks.3.3.bn1.weight: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn1.bias: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn1.running_mean: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn1.running_var: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.conv_dw.weight: copying a param with shape torch.Size([184, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([384, 1, 3, 3]).
+	size mismatch for blocks.3.3.bn2.weight: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn2.bias: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn2.running_mean: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.bn2.running_var: copying a param with shape torch.Size([184]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.3.3.conv_pwl.weight: copying a param with shape torch.Size([80, 184, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 384, 1, 1]).
+	size mismatch for blocks.3.3.bn3.weight: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.3.bn3.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.3.bn3.running_mean: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.3.3.bn3.running_var: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for blocks.4.0.conv_pw.weight: copying a param with shape torch.Size([480, 80, 1, 1]) from checkpoint, the shape in current model is torch.Size([384, 64, 1, 1]).
+	size mismatch for blocks.4.0.bn1.weight: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn1.bias: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn1.running_mean: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn1.running_var: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.conv_dw.weight: copying a param with shape torch.Size([480, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([384, 1, 3, 3]).
+	size mismatch for blocks.4.0.bn2.weight: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn2.bias: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn2.running_mean: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.bn2.running_var: copying a param with shape torch.Size([480]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for blocks.4.0.conv_pwl.weight: copying a param with shape torch.Size([112, 480, 1, 1]) from checkpoint, the shape in current model is torch.Size([96, 384, 1, 1]).
+	size mismatch for blocks.4.0.bn3.weight: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.0.bn3.bias: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.0.bn3.running_mean: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.0.bn3.running_var: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.1.conv_pw.weight: copying a param with shape torch.Size([672, 112, 1, 1]) from checkpoint, the shape in current model is torch.Size([576, 96, 1, 1]).
+	size mismatch for blocks.4.1.bn1.weight: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn1.bias: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn1.running_mean: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn1.running_var: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.conv_dw.weight: copying a param with shape torch.Size([672, 1, 3, 3]) from checkpoint, the shape in current model is torch.Size([576, 1, 3, 3]).
+	size mismatch for blocks.4.1.bn2.weight: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn2.bias: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn2.running_mean: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.bn2.running_var: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.4.1.conv_pwl.weight: copying a param with shape torch.Size([112, 672, 1, 1]) from checkpoint, the shape in current model is torch.Size([96, 576, 1, 1]).
+	size mismatch for blocks.4.1.bn3.weight: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.1.bn3.bias: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.1.bn3.running_mean: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.4.1.bn3.running_var: copying a param with shape torch.Size([112]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for blocks.5.0.conv_pw.weight: copying a param with shape torch.Size([672, 112, 1, 1]) from checkpoint, the shape in current model is torch.Size([576, 96, 1, 1]).
+	size mismatch for blocks.5.0.bn1.weight: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn1.bias: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn1.running_mean: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn1.running_var: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.conv_dw.weight: copying a param with shape torch.Size([672, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([576, 1, 3, 3]).
+	size mismatch for blocks.5.0.bn2.weight: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn2.bias: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn2.running_mean: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.bn2.running_var: copying a param with shape torch.Size([672]) from checkpoint, the shape in current model is torch.Size([576]).
+	size mismatch for blocks.5.0.conv_pwl.weight: copying a param with shape torch.Size([160, 672, 1, 1]) from checkpoint, the shape in current model is torch.Size([160, 576, 1, 1]).
+	size mismatch for blocks.5.1.conv_dw.weight: copying a param with shape torch.Size([960, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([960, 1, 3, 3]).
+	size mismatch for blocks.5.2.conv_dw.weight: copying a param with shape torch.Size([960, 1, 5, 5]) from checkpoint, the shape in current model is torch.Size([960, 1, 3, 3]).
+	size mismatch for conv_head.weight: copying a param with shape torch.Size([1280, 960, 1, 1]) from checkpoint, the shape in current model is torch.Size([1280, 320, 1, 1]).
+2026-01-31 23:32:35,621 [INFO]     mobilenetv3_large_100 (timm) missing: 0, unexpected: 0
+2026-01-31 23:32:35,622 [INFO]   Successfully loaded weights into mobilenet_v2
+2026-01-31 23:32:35,631 [INFO] Evaluating...
+2026-01-31 23:32:36,362 [INFO]   Batch 0/224
+2026-01-31 23:32:37,409 [INFO]   Batch 10/224
+2026-01-31 23:32:38,985 [INFO]   Batch 20/224
+2026-01-31 23:32:40,155 [INFO]   Batch 30/224
+2026-01-31 23:32:41,831 [INFO]   Batch 40/224
+2026-01-31 23:32:42,988 [INFO]   Batch 50/224
+2026-01-31 23:32:44,680 [INFO]   Batch 60/224
+2026-01-31 23:32:45,854 [INFO]   Batch 70/224
+2026-01-31 23:32:47,428 [INFO]   Batch 80/224
+2026-01-31 23:32:48,552 [INFO]   Batch 90/224
+2026-01-31 23:32:50,144 [INFO]   Batch 100/224
+2026-01-31 23:32:51,383 [INFO]   Batch 110/224
+2026-01-31 23:32:52,934 [INFO]   Batch 120/224
+2026-01-31 23:32:54,161 [INFO]   Batch 130/224
+2026-01-31 23:32:55,718 [INFO]   Batch 140/224
+2026-01-31 23:32:56,915 [INFO]   Batch 150/224
+2026-01-31 23:32:58,611 [INFO]   Batch 160/224
+2026-01-31 23:32:59,829 [INFO]   Batch 170/224
+2026-01-31 23:33:01,429 [INFO]   Batch 180/224
+2026-01-31 23:33:02,655 [INFO]   Batch 190/224
+2026-01-31 23:33:04,338 [INFO]   Batch 200/224
+2026-01-31 23:33:05,622 [INFO]   Batch 210/224
+2026-01-31 23:33:07,301 [INFO]   Batch 220/224
+2026-01-31 23:33:07,454 [INFO] 
+Results: Acc=0.8424, AUC=0.9148
+2026-01-31 23:33:07,454 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.86      0.84      0.85      3737
+          PA       0.83      0.85      0.84      3406
+
+    accuracy                           0.84      7143
+   macro avg       0.84      0.84      0.84      7143
+weighted avg       0.84      0.84      0.84      7143
+
+2026-01-31 23:33:07,454 [INFO] 
+Confusion Matrix:
+[[3126  611]
+ [ 515 2891]]
+2026-01-31 23:33:07,454 [INFO] 
+==================================================
+2026-01-31 23:33:07,454 [INFO] Processing: senetfullyfinetunebestmodel.pth
+2026-01-31 23:33:07,454 [INFO] ==================================================
+2026-01-31 23:33:07,635 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:33:09,000 [INFO]     Timm error for senet154: Error(s) in loading state_dict for ResNet:
+	size mismatch for bn1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for bn1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for bn1.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for bn1.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer1.0.conv1.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 128, 1, 1]).
+	size mismatch for layer1.0.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 2, 3, 3]).
+	size mismatch for layer1.0.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.0.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.0.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.0.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.0.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 256, 1, 1]).
+	size mismatch for layer1.0.downsample.0.weight: copying a param with shape torch.Size([256, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 128, 1, 1]).
+	size mismatch for layer1.1.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 2, 3, 3]).
+	size mismatch for layer1.1.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.1.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.1.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.1.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.1.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 256, 1, 1]).
+	size mismatch for layer1.2.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 2, 3, 3]).
+	size mismatch for layer1.2.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.2.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.2.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.2.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer1.2.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 256, 1, 1]).
+	size mismatch for layer2.0.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 4, 3, 3]).
+	size mismatch for layer2.0.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 512, 1, 1]).
+	size mismatch for layer2.0.downsample.0.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 256, 3, 3]).
+	size mismatch for layer2.1.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 4, 3, 3]).
+	size mismatch for layer2.1.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 512, 1, 1]).
+	size mismatch for layer2.2.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 4, 3, 3]).
+	size mismatch for layer2.2.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.2.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.2.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.2.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.2.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 512, 1, 1]).
+	size mismatch for layer2.3.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 4, 3, 3]).
+	size mismatch for layer2.3.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.3.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.3.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.3.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.3.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 512, 1, 1]).
+	size mismatch for layer3.0.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.0.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer3.0.downsample.0.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 512, 3, 3]).
+	size mismatch for layer3.1.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.1.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer3.2.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.2.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.2.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.2.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.2.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.2.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer3.3.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.3.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.3.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.3.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.3.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.3.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer3.4.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.4.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.4.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.4.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.4.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.4.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer3.5.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([1024, 8, 3, 3]).
+	size mismatch for layer3.5.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.5.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.5.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.5.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.5.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 1024, 1, 1]).
+	size mismatch for layer4.0.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([2048, 16, 3, 3]).
+	size mismatch for layer4.0.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 2048, 1, 1]).
+	size mismatch for layer4.0.downsample.0.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 1024, 3, 3]).
+	size mismatch for layer4.1.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([2048, 16, 3, 3]).
+	size mismatch for layer4.1.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 2048, 1, 1]).
+	size mismatch for layer4.2.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([2048, 16, 3, 3]).
+	size mismatch for layer4.2.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.2.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.2.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.2.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.2.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 2048, 1, 1]).
+2026-01-31 23:33:09,298 [INFO]     Timm error for seresnet50: Error(s) in loading state_dict for ResNet:
+	size mismatch for layer1.0.conv1.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 64, 1, 1]).
+	size mismatch for layer1.0.bn1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for layer1.0.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.0.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 64, 1, 1]).
+	size mismatch for layer1.1.conv1.weight: copying a param with shape torch.Size([128, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer1.1.bn1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for layer1.1.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.1.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 64, 1, 1]).
+	size mismatch for layer1.2.conv1.weight: copying a param with shape torch.Size([128, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer1.2.bn1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.conv2.weight: copying a param with shape torch.Size([128, 4, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for layer1.2.bn2.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn2.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.bn2.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for layer1.2.conv3.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 64, 1, 1]).
+	size mismatch for layer2.0.conv1.weight: copying a param with shape torch.Size([256, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for layer2.0.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for layer2.0.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.0.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 128, 1, 1]).
+	size mismatch for layer2.1.conv1.weight: copying a param with shape torch.Size([256, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.1.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for layer2.1.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.1.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 128, 1, 1]).
+	size mismatch for layer2.2.conv1.weight: copying a param with shape torch.Size([256, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.2.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for layer2.2.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.2.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 128, 1, 1]).
+	size mismatch for layer2.3.conv1.weight: copying a param with shape torch.Size([256, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.3.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.conv2.weight: copying a param with shape torch.Size([256, 8, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for layer2.3.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer2.3.conv3.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 128, 1, 1]).
+	size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([512, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 512, 1, 1]).
+	size mismatch for layer3.0.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.0.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.0.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.1.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.1.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.1.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer3.2.conv1.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.2.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.2.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.2.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer3.3.conv1.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.3.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.3.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.3.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer3.4.conv1.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.4.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.4.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.4.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer3.5.conv1.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.5.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.conv2.weight: copying a param with shape torch.Size([512, 16, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 256, 3, 3]).
+	size mismatch for layer3.5.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for layer3.5.conv3.weight: copying a param with shape torch.Size([1024, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 256, 1, 1]).
+	size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([1024, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 1024, 1, 1]).
+	size mismatch for layer4.0.bn1.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn1.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn1.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn1.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 512, 3, 3]).
+	size mismatch for layer4.0.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.0.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 512, 1, 1]).
+	size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([1024, 2048, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for layer4.1.bn1.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn1.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn1.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn1.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 512, 3, 3]).
+	size mismatch for layer4.1.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.1.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 512, 1, 1]).
+	size mismatch for layer4.2.conv1.weight: copying a param with shape torch.Size([1024, 2048, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for layer4.2.bn1.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn1.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn1.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn1.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.conv2.weight: copying a param with shape torch.Size([1024, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 512, 3, 3]).
+	size mismatch for layer4.2.bn2.weight: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn2.bias: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn2.running_mean: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.bn2.running_var: copying a param with shape torch.Size([1024]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer4.2.conv3.weight: copying a param with shape torch.Size([2048, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 512, 1, 1]).
+2026-01-31 23:33:09,612 [INFO]     seresnext50_32x4d (timm) missing: 0, unexpected: 0
+2026-01-31 23:33:09,612 [INFO]   Successfully loaded weights into seresnext50_32x4d
+2026-01-31 23:33:09,634 [INFO] Evaluating...
+2026-01-31 23:33:10,393 [INFO]   Batch 0/224
+2026-01-31 23:33:11,638 [INFO]   Batch 10/224
+2026-01-31 23:33:13,103 [INFO]   Batch 20/224
+2026-01-31 23:33:14,401 [INFO]   Batch 30/224
+2026-01-31 23:33:15,954 [INFO]   Batch 40/224
+2026-01-31 23:33:17,242 [INFO]   Batch 50/224
+2026-01-31 23:33:18,909 [INFO]   Batch 60/224
+2026-01-31 23:33:20,265 [INFO]   Batch 70/224
+2026-01-31 23:33:21,755 [INFO]   Batch 80/224
+2026-01-31 23:33:23,000 [INFO]   Batch 90/224
+2026-01-31 23:33:24,564 [INFO]   Batch 100/224
+2026-01-31 23:33:25,869 [INFO]   Batch 110/224
+2026-01-31 23:33:27,441 [INFO]   Batch 120/224
+2026-01-31 23:33:28,803 [INFO]   Batch 130/224
+2026-01-31 23:33:30,371 [INFO]   Batch 140/224
+2026-01-31 23:33:31,725 [INFO]   Batch 150/224
+2026-01-31 23:33:33,411 [INFO]   Batch 160/224
+2026-01-31 23:33:34,721 [INFO]   Batch 170/224
+2026-01-31 23:33:36,373 [INFO]   Batch 180/224
+2026-01-31 23:33:37,670 [INFO]   Batch 190/224
+2026-01-31 23:33:39,216 [INFO]   Batch 200/224
+2026-01-31 23:33:40,558 [INFO]   Batch 210/224
+2026-01-31 23:33:42,100 [INFO]   Batch 220/224
+2026-01-31 23:33:42,370 [INFO] 
+Results: Acc=0.8083, AUC=0.9185
+2026-01-31 23:33:42,370 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.89      0.73      0.80      3737
+          PA       0.75      0.90      0.82      3406
+
+    accuracy                           0.81      7143
+   macro avg       0.82      0.81      0.81      7143
+weighted avg       0.82      0.81      0.81      7143
+
+2026-01-31 23:33:42,370 [INFO] 
+Confusion Matrix:
+[[2710 1027]
+ [ 342 3064]]
+2026-01-31 23:33:42,370 [INFO] 
+==================================================
+2026-01-31 23:33:42,370 [INFO] Processing: resnet_34_best_model.pth
+2026-01-31 23:33:42,370 [INFO] ==================================================
+2026-01-31 23:33:42,471 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:33:42,767 [INFO]     Failed resnet50 load attempt: Error(s) in loading state_dict for ResNet:
+	size mismatch for layer1.0.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 1, 1]).
+	size mismatch for layer1.1.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer1.2.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer2.0.conv1.weight: copying a param with shape torch.Size([128, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.0.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.2.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.3.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.0.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.2.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.3.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.4.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.5.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.0.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for layer4.2.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for fc.weight: copying a param with shape torch.Size([2, 512]) from checkpoint, the shape in current model is torch.Size([2, 2048]).
+2026-01-31 23:33:43,350 [INFO]     resnet34 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:33:43,350 [INFO]   Successfully loaded weights into resnet34
+2026-01-31 23:33:43,365 [INFO] Evaluating...
+2026-01-31 23:33:44,036 [INFO]   Batch 0/224
+2026-01-31 23:33:45,220 [INFO]   Batch 10/224
+2026-01-31 23:33:46,785 [INFO]   Batch 20/224
+2026-01-31 23:33:48,052 [INFO]   Batch 30/224
+2026-01-31 23:33:49,775 [INFO]   Batch 40/224
+2026-01-31 23:33:50,936 [INFO]   Batch 50/224
+2026-01-31 23:33:52,671 [INFO]   Batch 60/224
+2026-01-31 23:33:53,885 [INFO]   Batch 70/224
+2026-01-31 23:33:55,472 [INFO]   Batch 80/224
+2026-01-31 23:33:56,612 [INFO]   Batch 90/224
+2026-01-31 23:33:58,203 [INFO]   Batch 100/224
+2026-01-31 23:33:59,396 [INFO]   Batch 110/224
+2026-01-31 23:34:01,025 [INFO]   Batch 120/224
+2026-01-31 23:34:02,240 [INFO]   Batch 130/224
+2026-01-31 23:34:03,882 [INFO]   Batch 140/224
+2026-01-31 23:34:05,152 [INFO]   Batch 150/224
+2026-01-31 23:34:06,816 [INFO]   Batch 160/224
+2026-01-31 23:34:08,006 [INFO]   Batch 170/224
+2026-01-31 23:34:09,687 [INFO]   Batch 180/224
+2026-01-31 23:34:10,869 [INFO]   Batch 190/224
+2026-01-31 23:34:12,521 [INFO]   Batch 200/224
+2026-01-31 23:34:13,719 [INFO]   Batch 210/224
+2026-01-31 23:34:15,374 [INFO]   Batch 220/224
+2026-01-31 23:34:15,508 [INFO] 
+Results: Acc=0.7612, AUC=0.8774
+2026-01-31 23:34:15,508 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.86      0.65      0.74      3737
+          PA       0.70      0.89      0.78      3406
+
+    accuracy                           0.76      7143
+   macro avg       0.78      0.77      0.76      7143
+weighted avg       0.78      0.76      0.76      7143
+
+2026-01-31 23:34:15,509 [INFO] 
+Confusion Matrix:
+[[2413 1324]
+ [ 382 3024]]
+2026-01-31 23:34:15,509 [INFO] 
+==================================================
+2026-01-31 23:34:15,509 [INFO] Processing: resnet_34_model_weights.pth
+2026-01-31 23:34:15,509 [INFO] ==================================================
+2026-01-31 23:34:15,629 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:34:15,914 [INFO]     Failed resnet50 load attempt: Error(s) in loading state_dict for ResNet:
+	size mismatch for layer1.0.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 1, 1]).
+	size mismatch for layer1.1.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer1.2.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for layer2.0.conv1.weight: copying a param with shape torch.Size([128, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.0.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 256, 1, 1]).
+	size mismatch for layer2.0.downsample.1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.0.downsample.1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for layer2.1.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.2.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer2.3.conv1.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.0.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 512, 1, 1]).
+	size mismatch for layer3.0.downsample.1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.0.downsample.1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.2.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.3.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.4.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer3.5.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.0.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 1024, 1, 1]).
+	size mismatch for layer4.0.downsample.1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.0.downsample.1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for layer4.2.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for fc.weight: copying a param with shape torch.Size([2, 512]) from checkpoint, the shape in current model is torch.Size([2, 2048]).
+2026-01-31 23:34:16,150 [INFO]     resnet34 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:34:16,151 [INFO]   Successfully loaded weights into resnet34
+2026-01-31 23:34:16,166 [INFO] Evaluating...
+2026-01-31 23:34:16,834 [INFO]   Batch 0/224
+2026-01-31 23:34:17,988 [INFO]   Batch 10/224
+2026-01-31 23:34:19,588 [INFO]   Batch 20/224
+2026-01-31 23:34:20,769 [INFO]   Batch 30/224
+2026-01-31 23:34:22,431 [INFO]   Batch 40/224
+2026-01-31 23:34:23,618 [INFO]   Batch 50/224
+2026-01-31 23:34:25,279 [INFO]   Batch 60/224
+2026-01-31 23:34:26,590 [INFO]   Batch 70/224
+2026-01-31 23:34:28,033 [INFO]   Batch 80/224
+2026-01-31 23:34:29,278 [INFO]   Batch 90/224
+2026-01-31 23:34:30,727 [INFO]   Batch 100/224
+2026-01-31 23:34:32,036 [INFO]   Batch 110/224
+2026-01-31 23:34:33,426 [INFO]   Batch 120/224
+2026-01-31 23:34:34,762 [INFO]   Batch 130/224
+2026-01-31 23:34:36,157 [INFO]   Batch 140/224
+2026-01-31 23:34:37,560 [INFO]   Batch 150/224
+2026-01-31 23:34:38,913 [INFO]   Batch 160/224
+2026-01-31 23:34:40,352 [INFO]   Batch 170/224
+2026-01-31 23:34:41,645 [INFO]   Batch 180/224
+2026-01-31 23:34:43,076 [INFO]   Batch 190/224
+2026-01-31 23:34:44,399 [INFO]   Batch 200/224
+2026-01-31 23:34:45,937 [INFO]   Batch 210/224
+2026-01-31 23:34:47,186 [INFO]   Batch 220/224
+2026-01-31 23:34:47,665 [INFO] 
+Results: Acc=0.7651, AUC=0.8741
+2026-01-31 23:34:47,665 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.85      0.66      0.75      3737
+          PA       0.70      0.88      0.78      3406
+
+    accuracy                           0.77      7143
+   macro avg       0.78      0.77      0.76      7143
+weighted avg       0.78      0.77      0.76      7143
+
+2026-01-31 23:34:47,665 [INFO] 
+Confusion Matrix:
+[[2483 1254]
+ [ 424 2982]]
+2026-01-31 23:34:47,665 [INFO] 
+==================================================
+2026-01-31 23:34:47,665 [INFO] Processing: simclrv1fullyfinetunebestmodel.pth
+2026-01-31 23:34:47,665 [INFO] ==================================================
+2026-01-31 23:34:47,792 [INFO]   Checkpoint has 2 classes.
+2026-01-31 23:34:48,089 [INFO]     resnet50 (torchvision) missing: 0, unexpected: 0
+2026-01-31 23:34:48,089 [INFO]   Successfully loaded weights into resnet50
+2026-01-31 23:34:48,109 [INFO] Evaluating...
+2026-01-31 23:34:48,827 [INFO]   Batch 0/224
+2026-01-31 23:34:50,085 [INFO]   Batch 10/224
+2026-01-31 23:34:51,623 [INFO]   Batch 20/224
+2026-01-31 23:34:52,868 [INFO]   Batch 30/224
+2026-01-31 23:34:54,426 [INFO]   Batch 40/224
+2026-01-31 23:34:55,633 [INFO]   Batch 50/224
+2026-01-31 23:34:57,187 [INFO]   Batch 60/224
+2026-01-31 23:34:58,397 [INFO]   Batch 70/224
+2026-01-31 23:34:59,843 [INFO]   Batch 80/224
+2026-01-31 23:35:00,965 [INFO]   Batch 90/224
+2026-01-31 23:35:02,440 [INFO]   Batch 100/224
+2026-01-31 23:35:03,617 [INFO]   Batch 110/224
+2026-01-31 23:35:05,171 [INFO]   Batch 120/224
+2026-01-31 23:35:06,429 [INFO]   Batch 130/224
+2026-01-31 23:35:07,973 [INFO]   Batch 140/224
+2026-01-31 23:35:09,222 [INFO]   Batch 150/224
+2026-01-31 23:35:10,820 [INFO]   Batch 160/224
+2026-01-31 23:35:12,044 [INFO]   Batch 170/224
+2026-01-31 23:35:13,676 [INFO]   Batch 180/224
+2026-01-31 23:35:14,943 [INFO]   Batch 190/224
+2026-01-31 23:35:16,506 [INFO]   Batch 200/224
+2026-01-31 23:35:17,753 [INFO]   Batch 210/224
+2026-01-31 23:35:19,321 [INFO]   Batch 220/224
+2026-01-31 23:35:19,516 [INFO] 
+Results: Acc=0.5232, AUC=0.8923
+2026-01-31 23:35:19,517 [INFO] 
+Classification Report:
+              precision    recall  f1-score   support
+
+          AP       0.52      1.00      0.69      3737
+          PA       0.00      0.00      0.00      3406
+
+    accuracy                           0.52      7143
+   macro avg       0.26      0.50      0.34      7143
+weighted avg       0.27      0.52      0.36      7143
+
+2026-01-31 23:35:19,517 [INFO] 
+Confusion Matrix:
+[[3737    0]
+ [3406    0]]
+2026-01-31 23:35:19,520 [INFO] 
+==================================================
+2026-01-31 23:35:19,520 [INFO] FINAL EVALUATION SUMMARY
+2026-01-31 23:35:19,520 [INFO] ==================================================
+2026-01-31 23:35:19,529 [INFO] 
+                                     Model   Status  accuracy       auc  f1_weighted
+0       xceptionfullyfinetunebestmodel.pth  Success  0.853843  0.929604     0.853424
+1       densenetfullyfinetunebestmodel.pth  Success  0.840543  0.929666     0.840277
+2       radimagenet_resnet50_finetuned.pth  Success  0.546549  0.600499     0.528161
+3   512x512resnet50nofinetunebestmodel.pth  Success  0.691726  0.764422     0.687820
+4          resnet50nofinetunebestmodel.pth  Success  0.798124  0.896430     0.796959
+5       resnet50fullyfinetunebestmodel.pth  Success  0.742265  0.870336     0.737657
+6        resnet50halffinetunebestmodel.pth  Success  0.833683  0.934948     0.833212
+7                           best_model.pth  Success  0.476830  0.500000     0.307913
+8      mobilenetfullyfinetunebestmodel.pth  Success  0.842363  0.914794     0.842433
+9          senetfullyfinetunebestmodel.pth  Success  0.808344  0.918468     0.807431
+10                resnet_34_best_model.pth  Success  0.761165  0.877435     0.758451
+11             resnet_34_model_weights.pth  Success  0.765085  0.874083     0.763168
+12      simclrv1fullyfinetunebestmodel.pth  Success  0.523170  0.892276     0.359391
+2026-01-31 23:35:19,530 [INFO] 
+==================================================
+2026-01-31 23:35:19,530 [INFO] Full logs available at /home/furkan/Projects/NIHChestXrays/COVID-CXNet/evaluation_results_test.log
+2026-01-31 23:35:19,530 [INFO] ==================================================
